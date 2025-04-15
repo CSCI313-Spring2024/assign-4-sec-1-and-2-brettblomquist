@@ -1,0 +1,10 @@
+
+<div class="container">
+  <div class="row">
+    @for(con of contacts; track con; let i = $index){
+    <div class="col-md-4 mb-3">
+      <app-contact [contact]="con" [index]="i"></app-contact>
+    </div>
+    }
+  </div>
+</div>

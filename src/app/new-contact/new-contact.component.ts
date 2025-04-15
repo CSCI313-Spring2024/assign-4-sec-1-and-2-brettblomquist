@@ -1,6 +1,7 @@
 import { Component, Input } from '@angular/core';
 import { ContactsService } from '../contacts.service';
 
+
 @Component({
   selector: 'app-new-contact',
   imports: [],
@@ -13,9 +14,9 @@ export class NewContactComponent {
 
   constructor(private contactsService: ContactsService){}
 
+
   addContact(firstName:string, lastName:string, phoneNumber:string, email:string){
     this.contactsService.addContact(firstName, lastName, phoneNumber, email);
-
   }
 
 }

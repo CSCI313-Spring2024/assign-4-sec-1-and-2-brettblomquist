@@ -5,7 +5,7 @@
       <p>Name: {{ contact.firstName }} {{contact.lastName }}</p>
       <p>Phone Number: {{ contact.phoneNumber }}</p>
       <p>Email: {{ contact.email }}</p>
-      <button class="btn btn-primary">Edit</button>
+      <button class="btn btn-primary" [routerLink]="['/edit-contact', contact.id]">Edit</button>
       <button class="btn btn-danger" (click)="deleteContact(index)">Delete</button>
     </div>
   </div>
