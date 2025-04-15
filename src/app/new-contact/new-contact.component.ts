@@ -1,10 +1,11 @@
 import { Component, Input } from '@angular/core';
 import { ContactsService } from '../contacts.service';
+import { RouterModule } from '@angular/router';
 
 
 @Component({
   selector: 'app-new-contact',
-  imports: [],
+  imports: [RouterModule],
   templateUrl: './new-contact.component.html',
   styleUrl: './new-contact.component.css'
 })

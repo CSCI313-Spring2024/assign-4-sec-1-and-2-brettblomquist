@@ -1,4 +1,12 @@
-<div>Contacts</div>
-<button class="btn btn-primary" [routerLink]="['']">Home</button>
-<button class="btn btn-primary" [routerLink]="['new-contact']">Add Contact</button>
+<nav class="navbar navbar-default bg-dark navbar-dark">
+  <div class="container d-flex justify-content-center">
+    <p class="navbar-brand text-center">Contact Manager</p>
+  </div>
+</nav>
+<button class="btn btn-primary me-2 ms-2 mt-2 mb-3" [routerLink]="['']">
+  Home
+</button>
+<button class="btn btn-primary mt-2 mb-3" [routerLink]="['new-contact']">
+  Add Contact
+</button>
 <router-outlet></router-outlet>
