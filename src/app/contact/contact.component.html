@@ -1,5 +1,11 @@
-<div class="container">
-    <p>Name: {{ contact.firstName }} {{contact.lastName }}</p>
-    <p>Phone Number: {{ contact.phoneNumber }}</p>
-    <p>Email: {{ contact.email }}</p>
-</div>
+
+  <div class="card mx-auto w-65">
+    <div class="card-body">
+      <h5 class="card-title">Contact {{ index + 1 }}</h5>
+      <p>Name: {{ contact.firstName }} {{contact.lastName }}</p>
+      <p>Phone Number: {{ contact.phoneNumber }}</p>
+      <p>Email: {{ contact.email }}</p>
+      <button class="btn btn-primary">Edit</button>
+      <button class="btn btn-danger" (click)="deleteContact(index)">Delete</button>
+    </div>
+  </div>

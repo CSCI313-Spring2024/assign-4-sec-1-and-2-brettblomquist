@@ -1,0 +1,18 @@
+<div class="container">
+  <div class="card mx-auto w-50">
+    <div class="card-body">
+    <h5 class="card-title">Add New Contact</h5>
+      <div class="form-group">
+        <label><p>First Name:</p></label>
+        <input type="text" class="form-control" #firstName />
+        <label><p>Last Name:</p></label>
+        <input type="text" class="form-control" #lastName />
+        <label><p>Phone Number:</p></label>
+        <input type="text" class="form-control" #phoneNumber />
+        <label><p>Email:</p></label>
+        <input type="text" class="form-control" #email />
+      </div>
+        <button class="btn btn-primary mt-3" (click)="addContact(firstName.value, lastName.value, phoneNumber.value, email.value)">Add Contact</button>
+    </div>
+  </div>
+</div>

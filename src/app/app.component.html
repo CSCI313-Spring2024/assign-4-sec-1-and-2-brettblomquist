@@ -1,10 +1,16 @@
 <div>Contacts</div>
-<div class="container">
-  <div class="row">
-    @for(con of contacts; track con; let i = $index){
-    <div class="col-md-4 mb-3">
-      <app-contact [contact]="con"></app-contact>
-    </div>
-    }
-  </div>
-</div>
+<button class="btn btn-primary" (click)="switchView()">{{ viewService.contactState }}</button>
+@if(viewService.isAddContactVisible() == 1){
+    <div class="container">
+        <div class="row">
+          @for(con of contacts; track con; let i = $index){
+          <div class="col-md-4 mb-3">
+            <app-contact [contact]="con" [index]="i"></app-contact>
+          </div>
+          }
+        </div>
+        </div>
+      
+} @else if(viewService.isAddContactVisible() == 2){
+    <app-new-contact></app-new-contact>
+}

@@ -16,7 +16,8 @@ export class ContactsService {
       lastName: "Roe",
       phoneNumber: "222-222-2222",
       email: "janeroe@gmail.com"
-    }
+    },
+    
   ]
 
   constructor() { }
