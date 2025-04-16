@@ -5,6 +5,6 @@
       <p class="mt-3 mb-1">Phone Number: {{ contact.phoneNumber }}</p>
       <p>Email: {{ contact.email }}</p>
       <button class="btn btn-primary me-2" [routerLink]="['/edit-contact', contact.id]">Edit</button>
-      <button class="btn btn-danger" (click)="deleteContact(index)">Delete</button>
+      <button class="btn btn-danger" (click)="deleteContact(contact.id)">Delete</button>
     </div>
   </div>
